@@ -1,7 +1,7 @@
-let parent = document.getElementById("parentWrapper");
-let controller = new Controller(parent);
+let parentTime = document.getElementById("parentWrapper");
+let controllerTime = new Controller(parentTime);
 
-controller.initialise(8);
+controllerTime.initialise(8);
 
 function showOnDisplay() {
     let day = new Date();
@@ -16,8 +16,7 @@ function showOnDisplay() {
     hrsOne = hrs.toString().length === 2 ? hrs.toString()[1] : hrs;
     hrsTen = hrs.toString().length === 2 ? hrs.toString()[0] : 0;
 
-    let toShow = hrsTen + hrsOne + "-" + minsTen + minsOne + "-" + secsTen + secsOne;
-    controller.show(toShow);
-
+    let toShow = hrsTen.toString() + hrsOne + "-" + minsTen + minsOne + "-" + secsTen + secsOne;
+    controllerTime.show(toShow);
 }
 setInterval(showOnDisplay, 1);

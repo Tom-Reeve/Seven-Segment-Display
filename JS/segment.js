@@ -1,10 +1,12 @@
 class Segment {
-    constructor(width, height, top, left, parent) {
+    constructor(width, height, top, left, parent, vertical) {
         this.width = width + "px";
         this.height = height + "px";
         this.top = top + "px";
         this.left = left + "px";
         this.parent = parent;
+
+        this.vertical = vertical;
 
         this.element = this.createSegment();
     }
@@ -13,7 +15,12 @@ class Segment {
         let short = this.width / 8;
 
         let segment = document.createElement("div");
-        segment.setAttribute("class", "segment");
+        segment.classList.add("segment");
+        if (this.vertical) {
+            segment.classList.add("vertical");
+        } else {
+            segment.classList.add("horizontal");
+        }
 
         segment.style.width = this.width;
         segment.style.height = this.height;
