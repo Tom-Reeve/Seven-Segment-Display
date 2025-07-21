@@ -1,0 +1,41 @@
+#siteContainer {
+    outline: 1px solid;
+
+    display: flex;
+    position: absolute;
+    height: auto;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#pageContainer {
+    outline: 1px solid;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parentWrapper {
+    width: 1200px;
+    height: 200px;
+}
+.displayContainer {
+    float: left;
+    position: relative;
+}
+.segment {
+    position: absolute;
+}
+.highlight {
+    background-color: red;
+}
