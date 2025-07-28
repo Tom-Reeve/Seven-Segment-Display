@@ -32,6 +32,8 @@
 .displayContainer {
     float: left;
     position: relative;
+
+    transform: skew(-15deg);
 }
 .segment {
     position: absolute;
