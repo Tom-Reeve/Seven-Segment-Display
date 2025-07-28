@@ -19,13 +19,13 @@ class SevenSegmentDisplay {
         this.createSegments();
     }
     createSegments() {
-        let segmentA = new Segment(60, 15, 17.5, 30, this.display, 0); //w, h, t, l
-        let segmentB = new Segment(15, 60, 32.5, 90, this.display, 1);
-        let segmentC = new Segment(15, 60, 107.5, 90, this.display, 1);
-        let segmentD = new Segment(60, 15, 167.5, 30, this.display, 0);
-        let segmentE = new Segment(15, 60, 107.5, 15, this.display, 1);
-        let segmentF = new Segment(15, 60, 32.5, 15, this.display, 1);
-        let segmentG = new Segment(60, 15, 92.5, 30, this.display, 0);
+        let segmentA = new Segment(60, 15, 17.5, 20, this.display, 0); //w, h, t, l
+        let segmentB = new Segment(15, 60, 32.5, 80, this.display, 1);
+        let segmentC = new Segment(15, 60, 107.5, 80, this.display, 1);
+        let segmentD = new Segment(60, 15, 167.5, 20, this.display, 0);
+        let segmentE = new Segment(15, 60, 107.5, 5, this.display, 1);
+        let segmentF = new Segment(15, 60, 32.5, 5, this.display, 1);
+        let segmentG = new Segment(60, 15, 92.5, 20, this.display, 0);
 
         this.segments.push(
             segmentA,
